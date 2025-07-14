@@ -4,7 +4,7 @@ import AccountIcon from "../assets/account-icon.png";
 
 function Navbar() {
   return (
-    <nav className="bg-white p-4">
+    <nav className="bg-white p-4 fixed top-0 left-0 right-0 shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="flex items-center">
