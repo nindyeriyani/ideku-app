@@ -4,8 +4,10 @@ import UserIcon from "../assets/foto.png";
 function IdeaDetail() {
   return (
     <main className="bg-white text-black w-200 mx-auto flex flex-col items-center p-5">
+      {/* Header Section */}
       <header className="w-full">
-        <div className="idea-info flex flex-col mb-5">
+        {/* idea info*/}
+        <section className="idea-info flex flex-col mb-5">
           <div className="category border border-gray-400 text-gray-400 font-extralight text-sm px-3 py-1 mb-5 w-fit text-center">
             Category
           </div>
@@ -13,8 +15,9 @@ function IdeaDetail() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
             ratione?
           </h1>
-        </div>
-        <div className="user-info flex items-center justify-between space-x-4 mb-5">
+        </section>
+        {/* User Info */}
+        <section className="user-info flex items-center justify-between space-x-4 mb-5">
           <div className="flex items-center space-x-4">
             <Image
               src={UserIcon}
@@ -30,8 +33,10 @@ function IdeaDetail() {
               Subscribe
             </button>
           </div>
-        </div>
+        </section>
       </header>
+
+      {/* Content Section */}
       <article>
         <figure className="w-full mb-5">
           <Image
@@ -59,6 +64,7 @@ function IdeaDetail() {
         </section>
       </article>
 
+      {/* Footer Section */}
       <footer className="like flex items-center justify-start w-full mt-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
