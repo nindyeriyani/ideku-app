@@ -48,8 +48,10 @@ function ContentCard({ idea }) {
         </section>
         <aside className="right-section w-48 h-48 flex-shrink-0 rounded-xl flex items-center justify-center ml-10">
           <Image
-            src={Pict}
+            src={idea.previewImage}
             alt="Foto"
+            width={192}
+            height={192}
             className="object-cover w-full h-full rounded-lg"
           />
         </aside>

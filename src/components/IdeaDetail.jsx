@@ -53,7 +53,9 @@ function IdeaDetail({ idea }) {
       <article>
         <figure className="w-full mb-5">
           <Image
-            src={UserIcon}
+            src={idea.previewImage}
+            width={800}
+            height={450}
             alt="Idea Image"
             className="rounded-xl h-80 object-cover"
           />

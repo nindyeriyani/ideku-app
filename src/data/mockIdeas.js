@@ -10,6 +10,7 @@ const mockIdeas = [
     category: "Artificial Intelligence",
     author: "Nindy Eriyani",
     image: "/images/female-avatar.png",
+    previewImage: "/images/photo-figure-1.jpg",
     likes: 293,
   },
   {
@@ -23,6 +24,7 @@ const mockIdeas = [
     category: "Artificial Intelligence",
     author: "Andi Jaedil",
     image: "/images/male-avatar.png",
+    previewImage: "/images/photo-figure-2.jpg",
     likes: 890,
   },
   {
@@ -36,6 +38,7 @@ const mockIdeas = [
     category: "Software as a Service",
     author: "Andi Nanda",
     image: "/images/male-avatar.png",
+    previewImage: "/images/photo-figure-3.jpg",
     likes: 742,
   },
   {
@@ -49,6 +52,7 @@ const mockIdeas = [
     category: "Software as a Service",
     author: "Fitria Dina",
     image: "/images/female-avatar.png",
+    previewImage: "/images/photo-figure-4.jpg",
     likes: 166,
   },
   {
@@ -62,6 +66,7 @@ const mockIdeas = [
     category: "EdTech",
     author: "Devi Miftah",
     image: "/images/female-avatar.png",
+    previewImage: "/images/photo-figure-5.jpg",
     likes: 203,
   },
   {
@@ -75,6 +80,7 @@ const mockIdeas = [
     category: "EdTech",
     author: "Faldi Firman",
     image: "/images/male-avatar.png",
+    previewImage: "/images/photo-figure-6.jpg",
     likes: 420,
   },
   {
@@ -88,6 +94,7 @@ const mockIdeas = [
     category: "Developer Tools",
     author: "Nurhidayat",
     image: "/images/male-avatar.png",
+    previewImage: "/images/photo-figure-7.jpg",
     likes: 900,
   },
   {
@@ -101,6 +108,7 @@ const mockIdeas = [
     category: "Developer Tools",
     author: "Selfiana",
     image: "/images/female-avatar.png",
+    previewImage: "/images/photo-figure-8.jpg",
     likes: 700,
   },
   {
@@ -114,6 +122,7 @@ const mockIdeas = [
     category: "Social Tech",
     author: "Awalia Putri",
     image: "/images/female-avatar.png",
+    previewImage: "/images/photo-figure-9.jpg",
     likes: 512,
   },
   {
@@ -128,6 +137,7 @@ const mockIdeas = [
     category: "Social Tech",
     author: "Asmar Abdurrahman",
     image: "/images/male-avatar.png",
+    previewImage: "/images/photo-figure-10.jpg",
     likes: "999",
   },
 ];
