@@ -5,7 +5,7 @@ import Pict from "../assets/foto.png";
 function ContentCard({ idea }) {
   return (
     <main className="bg-white shadow-md rounded-lg mt-8 text-black w-250 mx-auto p-5">
-      <Link href="/content" className="flex items-center cursor-pointer">
+      <Link href={`/content/${idea.id}`} className="flex items-center cursor-pointer">
         <section className="left-section">
           <header>
             {/* user info */}
@@ -32,7 +32,7 @@ function ContentCard({ idea }) {
           </header>
 
           <section className="content mb-5">
-            <p className="text-gray-700 text-base"> {idea.description}</p>
+            <p className="text-gray-700 text-base"> {idea.description.slice(0, 150)}...</p>
           </section>
 
           <footer className="flex items-center">

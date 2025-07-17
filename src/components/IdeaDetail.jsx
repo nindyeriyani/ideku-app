@@ -1,7 +1,7 @@
 import Image from "next/image";
 import UserIcon from "../assets/foto.png";
 
-function IdeaDetail() {
+function IdeaDetail({ idea }) {
   return (
     <main className="bg-white text-black w-200 mx-auto flex flex-col items-center p-5">
       {/* Header Section */}
@@ -9,23 +9,22 @@ function IdeaDetail() {
         {/* idea info*/}
         <section className="idea-info flex flex-col mb-5">
           <div className="category border border-gray-400 text-gray-400 font-extralight text-sm px-3 py-1 mb-5 w-fit text-center">
-            Category
+            {idea.category}
           </div>
-          <h1 className="text-4xl font-extrabold w-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-            ratione?
-          </h1>
+          <h1 className="text-4xl font-extrabold w-200">{idea.title}</h1>
         </section>
         {/* User Info */}
         <section className="user-info flex items-center justify-between space-x-4 mb-5">
           <div className="flex items-center space-x-4">
             <Image
-              src={UserIcon}
+              src={idea.image}
               alt="User Profile"
+              width={40}
+              height={40}
               className="rounded-full h-10 w-10 object-cover"
             />
             <div className="user-details">
-              <h2 className="text-black">John Doe</h2>
+              <h2 className="text-black">{idea.author}</h2>
             </div>
           </div>
           <div className="subs-btn">
@@ -47,20 +46,14 @@ function IdeaDetail() {
         </figure>
 
         <section className="content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-            ut, molestiae fugiat dolorum eum eaque culpa doloremque incidunt
-            inventore necessitatibus, labore voluptatem ipsum! Culpa vitae
-            cumque consectetur cupiditate repudiandae veritatis ducimus est
-            explicabo. Doloremque quae, quia laborum ad explicabo harum ea ipsa
-            cum iusto? Dolor ipsum aspernatur quia maiores. Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Officiis aliquam nulla
-            quibusdam labore unde pariatur dolorem porro praesentium dolore
-            commodi eius quos maxime recusandae nemo fuga possimus corrupti
-            eaque nam, eum reprehenderit id ex neque saepe dolor. Mollitia iure,
-            iste doloremque nihil officiis vero in rem illum et necessitatibus
-            sint.
-          </p>
+          {idea.description
+            .split("\n")
+            .filter((para) => para.trim() !== "")
+            .map((para, index) => (
+              <p key={index} className="mb-4 text-justify text-gray-800">
+                {para.trim()}
+              </p>
+            ))}
         </section>
       </article>
 
