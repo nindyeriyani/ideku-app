@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Pict from "../assets/foto.png";
 
 function ContentCard({ idea }) {
   return (

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import UserIcon from "../assets/foto.png";
 
 function IdeaDetail({ idea }) {
   const [likes, setLikes] = useState(idea.likes);
